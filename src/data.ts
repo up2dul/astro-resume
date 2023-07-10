@@ -13,8 +13,8 @@ export const data = {
       display: 'github.com/up2dul',
     },
     {
-      url: 'https://linkedin.com/in/abdulmalikk',
-      display: 'linkedin.com/in/abdulmalikk',
+      url: 'https://linkedin.com/in/up2dul',
+      display: 'linkedin.com/in/up2dul',
     },
   ],
   experiences: [
