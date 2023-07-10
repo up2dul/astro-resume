@@ -1,15 +1,93 @@
 ---
+import '@fontsource/raleway';
+import '@fontsource/open-sans';
+
+import { data } from '~/data';
+
+import Header from '~/components/Header.astro';
+import Section from '~/components/Section.astro';
+
+import '~/index.css';
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Resume</title>
+  </head>
+
+  <body class="px-12 py-3 text-slate-800">
+    <Header />
+
+    <main class="my-4 flex flex-col gap-4">
+      <Section title="About">
+        <p>
+          A self-taught Frontend Developer with a passion for building
+          user-friendly, beautiful user interface, and efficient websites.
+        </p>
+      </Section>
+
+      <Section title="Experiences">
+        <ul class="flex list-disc flex-col gap-2">
+          {
+            data.experiences.map((e) => (
+              <li>
+                <div class="flex justify-between">
+                  <div>
+                    <p>
+                      <span class="font-medium">{e.title}</span> • {e.type}
+                    </p>
+                    <p>
+                      <a href={e.companyUrl}>{e.company}</a> • {e.location}
+                    </p>
+                  </div>
+
+                  <div>
+                    <p>{e.period}</p>
+                  </div>
+                </div>
+              </li>
+            ))
+          }
+        </ul>
+      </Section>
+
+      <Section title="Education">
+        <ul class="flex list-disc flex-col gap-2">
+          {
+            data.educations.map((e) => (
+              <li>
+                <div class="flex justify-between">
+                  <div>
+                    <p>
+                      <span class="font-medium">{e.type}</span> • {e.degree}
+                    </p>
+                    <p>
+                      <a href={e.url}>{e.title}</a> • {e.location}
+                    </p>
+                  </div>
+
+                  <div>
+                    <p>{e.period}</p>
+                  </div>
+                </div>
+              </li>
+            ))
+          }
+        </ul>
+      </Section>
+
+      <Section title="Skills">
+        <ul class="flex list-disc flex-col gap-2">
+          <li>{data.skills[0].join(', ')}</li>
+          <li>{data.skills[1].join(', ')}</li>
+          <li>{data.skills[2].join(', ')}</li>
+        </ul>
+      </Section>
+    </main>
+
+  </body>
 </html>
