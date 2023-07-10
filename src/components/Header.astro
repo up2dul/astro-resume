@@ -1,0 +1,18 @@
+---
+import { data } from '~/data';
+---
+
+<header class="text-center">
+  <h1 class="text-3xl font-semibold">Abdul Malik</h1>
+  <p>Junior Frontend Developer</p>
+
+  <ul class="mt-2 flex justify-between">
+    {
+      data.contacts.map((contact) => (
+        <li>
+          <a href={contact.url}>{contact.display}</a>
+        </li>
+      ))
+    }
+  </ul>
+</header>
