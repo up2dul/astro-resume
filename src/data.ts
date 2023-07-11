@@ -1,8 +1,8 @@
 export const data = {
   contacts: [
     {
-      url: 'mailto:malik301002@gmail.com',
-      display: 'malik301002@gmail.com',
+      url: 'https://linkedin.com/in/up2dul',
+      display: 'linkedin.com/in/up2dul',
     },
     {
       url: 'https://up2dul.com',
@@ -13,24 +13,27 @@ export const data = {
       display: 'github.com/up2dul',
     },
     {
-      url: 'https://linkedin.com/in/up2dul',
-      display: 'linkedin.com/in/up2dul',
+      url: 'mailto:malik301002@gmail.com',
+      display: 'malik301002@gmail.com',
     },
   ],
   experiences: [
     {
       title: 'Frontend Developer',
       type: 'Full-time',
-      period: 'May 2023 - Present',
+      period: 'May 2023 – Present',
       company: 'Svara',
       companyUrl: 'https://svara.id',
       location: 'Bandung',
-      responsibilities: ['-'],
+      responsibilities: [
+        'Maintaining internal dashboard apps',
+        'Continue working on on-going ecommerce apps',
+      ],
     },
     {
       title: 'External Code Reviewer',
       type: 'Part-time',
-      period: 'April 2023 - Present',
+      period: 'April 2023 – Present',
       company: 'Dicoding',
       companyUrl: 'https://dicoding.com',
       location: 'Remote',
@@ -46,7 +49,7 @@ export const data = {
       title: 'SMK Media Informatika',
       type: 'High School Diploma',
       degree: 'Computer Software Engineering',
-      period: 'July 2017 - May 2020',
+      period: 'July 2017 – May 2020',
       url: 'https://smkmediainformatika.sch.id',
       location: 'Jakarta',
     },
