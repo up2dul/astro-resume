@@ -19,15 +19,24 @@ import '~/index.css';
     <title>Resume</title>
   </head>
 
-  <body class="px-12 py-3 text-slate-800">
+  <body class="px-12 py-8 text-slate-800">
     <Header />
 
     <main class="my-4 flex flex-col gap-4">
       <Section title="About">
         <p>
-          A self-taught Frontend Developer with a passion for building
-          user-friendly, beautiful user interface, and efficient websites.
+          A self-taught Frontend Developer with an abilities and passion for
+          building user-friendly, beautiful user interface, and efficient
+          websites.
         </p>
+      </Section>
+
+      <Section title="Skills">
+        <ul class="flex list-disc flex-col gap-2">
+          <li>{data.skills[0].join(', ')}</li>
+          <li>{data.skills[1].join(', ')}</li>
+          <li>{data.skills[2].join(', ')}</li>
+        </ul>
       </Section>
 
       <Section title="Experiences">
@@ -49,6 +58,12 @@ import '~/index.css';
                     <p>{e.period}</p>
                   </div>
                 </div>
+
+                <ul class="ml-5 list-disc">
+                  {e.responsibilities.map((responsibility) => (
+                    <li>{responsibility}</li>
+                  ))}
+                </ul>
               </li>
             ))
           }
@@ -79,15 +94,6 @@ import '~/index.css';
           }
         </ul>
       </Section>
-
-      <Section title="Skills">
-        <ul class="flex list-disc flex-col gap-2">
-          <li>{data.skills[0].join(', ')}</li>
-          <li>{data.skills[1].join(', ')}</li>
-          <li>{data.skills[2].join(', ')}</li>
-        </ul>
-      </Section>
     </main>
-
   </body>
 </html>
