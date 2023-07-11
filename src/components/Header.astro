@@ -1,12 +1,37 @@
 ---
 import { data } from '~/data';
+
+const htmlContacts = data.contacts
+  .map(
+    (contact) =>
+      `<li class="flex gap-4">
+        <a href=${contact.url}>${contact.display}</a>
+      </li>`
+  )
+  .join(' • ');
 ---
 
-<header class="text-center">
-  <h1 class="text-3xl font-semibold">Abdul Malik</h1>
-  <p>Junior Frontend Developer</p>
+<!-- version 1 -->
+<header class="mb-2 text-center">
+  <div>
+    <h1 class="text-3xl font-semibold">Abdul Malik</h1>
+    <p>Junior Frontend Developer</p>
+  </div>
 
-  <ul class="mt-2 flex justify-between">
+  <ul class="mt-2 flex flex-wrap justify-center gap-x-3 px-14">
+    <Fragment set:html={htmlContacts} />
+  </ul>
+</header>
+
+<!-- version 2 -->
+<!-- <header class="flex items-center justify-between">
+  <div>
+    <h1 class="text-3xl font-semibold">Abdul Malik</h1>
+    <p>Junior Frontend Developer</p>
+    <p>Jakarta, Indonesia</p>
+  </div>
+
+  <ul class="text-right">
     {
       data.contacts.map((contact) => (
         <li>
@@ -15,4 +40,4 @@ import { data } from '~/data';
       ))
     }
   </ul>
-</header>
+</header> -->
