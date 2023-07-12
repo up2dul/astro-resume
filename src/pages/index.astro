@@ -1,6 +1,5 @@
 ---
-import '@fontsource/raleway';
-import '@fontsource/open-sans';
+import '@fontsource/playfair-display';
 
 import { data } from '~/data';
 
@@ -19,38 +18,50 @@ import '~/index.css';
     <title>Resume</title>
   </head>
 
-  <body class="px-12 py-8 text-slate-800">
+  <body class="px-10 py-8 text-slate-950">
     <Header />
 
     <main class="my-4 flex flex-col gap-4">
       <Section title="About">
         <p>
-          A self-taught Frontend Developer with an abilities and passion for
-          building user-friendly, beautiful user interface, and efficient
-          websites.
+          A self-taught <i>Frontend Developer</i> with React ecosystem that passionate
+          for building user-friendly, beautiful user interface, and efficient websites.
         </p>
       </Section>
 
       <Section title="Skills">
-        <ul class="flex list-disc flex-col gap-2">
-          <li>{data.skills[0].join(', ')}.</li>
-          <li>{data.skills[1].join(', ')}.</li>
-          <li>{data.skills[2].join(', ')}.</li>
+        <ul class="flex flex-col gap-2">
+          <li>
+            <p><i>Markup/Programming Languages</i>:</p>
+            <ul class="ml-8 list-disc">
+              <li>{data.skills[0].join(', ')}.</li>
+            </ul>
+          </li>
+
+          <li>
+            <p><i>Tools & Technologies</i>:</p>
+            <ul class="ml-8 list-disc">
+              <li>{data.skills[1].join(', ')}.</li>
+            </ul>
+          </li>
         </ul>
       </Section>
 
       <Section title="Experiences">
-        <ul class="flex list-disc flex-col gap-2">
+        <ul class="flex flex-col gap-2">
           {
             data.experiences.map((e) => (
               <li>
                 <div class="flex justify-between">
                   <div>
                     <p>
-                      <span class="font-medium">{e.title}</span> • {e.type}
+                      <i>{e.title} </i> • {e.type}
                     </p>
                     <p>
-                      <a href={e.companyUrl}>{e.company}</a> • {e.location}
+                      <a href={e.companyUrl} class="font-medium">
+                        {e.company}
+                      </a>{' '}
+                      • {e.location}
                     </p>
                   </div>
 
@@ -59,7 +70,7 @@ import '~/index.css';
                   </div>
                 </div>
 
-                <ul class="ml-5 list-disc">
+                <ul class="ml-8 list-disc">
                   {e.responsibilities.map((responsibility) => (
                     <li>{responsibility}</li>
                   ))}
@@ -71,17 +82,20 @@ import '~/index.css';
       </Section>
 
       <Section title="Education">
-        <ul class="flex list-disc flex-col gap-2">
+        <ul class="flex flex-col gap-2">
           {
             data.educations.map((e) => (
               <li>
                 <div class="flex justify-between">
                   <div>
                     <p>
-                      <span class="font-medium">{e.type}</span> • {e.degree}
+                      <i>{e.type} </i> • {e.degree}
                     </p>
                     <p>
-                      <a href={e.url}>{e.title}</a> • {e.location}
+                      <a href={e.url} class="font-medium">
+                        {e.title}
+                      </a>{' '}
+                      • {e.location}
                     </p>
                   </div>
 
