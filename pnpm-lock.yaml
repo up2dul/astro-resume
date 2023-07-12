@@ -1,10 +1,7 @@
 lockfileVersion: '6.0'
 
 dependencies:
-  '@fontsource/open-sans':
-    specifier: ^5.0.5
-    version: 5.0.5
-  '@fontsource/raleway':
+  '@fontsource/playfair-display':
     specifier: ^5.0.5
     version: 5.0.5
   astro:
@@ -611,12 +608,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@fontsource/open-sans@5.0.5:
-    resolution: {integrity: sha512-gxFAandXkpbHKysq5gXk1zEpx44izNyaJs82gjnx8Z0Qi2nwCamweowiSGv42JxLZPgM8RB5amztHxPCeKcBJw==}
-    dev: false
-
-  /@fontsource/raleway@5.0.5:
-    resolution: {integrity: sha512-C++rrivYPnTsTfrVQVUgnf2m7EFFr0k9lk3ePvVXC+aQ3GAUtPpKpB0RqZs6RGCb3SJfiwQdMt7mZDNpj8WIKg==}
+  /@fontsource/playfair-display@5.0.5:
+    resolution: {integrity: sha512-IeFiP3TAGXX3TAabYfuSkmfzMFNSXhZ1td0wWgcZAcQ+DeZJWK1spw7AHt1ePM5EY/vu13JxVl+4vrGi18VMhg==}
     dev: false
 
   /@humanwhocodes/config-array@0.11.10:

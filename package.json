@@ -12,8 +12,7 @@
     "format": "prettier -w './**/*.{mjs,cjs,ts,astro}'"
   },
   "dependencies": {
-    "@fontsource/open-sans": "^5.0.5",
-    "@fontsource/raleway": "^5.0.5",
+    "@fontsource/playfair-display": "^5.0.5",
     "astro": "^2.7.0"
   },
   "devDependencies": {
