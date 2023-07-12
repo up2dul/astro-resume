@@ -26,8 +26,9 @@ export const data = {
       companyUrl: 'https://svara.id',
       location: 'Bandung',
       responsibilities: [
-        'Maintaining internal dashboard apps',
-        'Continue working on on-going ecommerce apps',
+        'Using GitLab to manage code repositories, collaborate with other developers, and maintain organized codebase.',
+        'Implement requested features for internal dashboard app that utilize React v15.',
+        'Continuously work on an ongoing e-commerce app by implementing requested features, fixing bugs, and optimizing code. The app is built using technologies such as Next.js, Tailwind, and React Query.',
       ],
     },
     {
@@ -38,16 +39,16 @@ export const data = {
       companyUrl: 'https://dicoding.com',
       location: 'Remote',
       responsibilities: [
-        "Reviewing student's submissions (assignments) in a course according to the given target",
-        "Provide solution and suggestion to student's submission",
-        'Help to answer the forum discussion',
+        "Reviewing student's submissions (assignments) in a course according to the given target.",
+        "Provide solution and suggestion to student's submission.",
+        'Help to answer the forum discussion.',
       ],
     },
   ],
   educations: [
     {
       title: 'SMK Media Informatika',
-      type: 'High School Diploma',
+      type: 'Vocational High School',
       degree: 'Computer Software Engineering',
       period: 'July 2017 – May 2020',
       url: 'https://smkmediainformatika.sch.id',
