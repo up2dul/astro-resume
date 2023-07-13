@@ -74,4 +74,20 @@ export const data = {
       'Radix',
     ],
   ],
+  portfolios: [
+    {
+      title: 'Diforum',
+      createdAt: 'Jan 2023',
+      url: 'https://diforum.vercel.app',
+      urlPreview: 'diforum.vercel.app',
+      description: 'A discussion app, created as a final submission for React expert course from Dicoding.',
+    },
+    {
+      title: 'CSS Shadow Generator',
+      createdAt: 'Aug 2022',
+      url: 'https://css-shadow-gen.vercel.app',
+      urlPreview: 'css-shadow-gen.vercel.app',
+      description: 'An app to help generate box-shadow or text-shadow CSS code with customization.',
+    },
+  ]
 };
