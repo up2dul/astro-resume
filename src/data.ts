@@ -27,8 +27,8 @@ export const data = {
       location: 'Bandung',
       responsibilities: [
         'Using GitLab to manage code repositories, collaborate with other developers, and maintain organized codebase.',
-        'Implement requested features for internal dashboard app that utilize React v15.',
-        'Continuously work on an ongoing e-commerce app by implementing requested features, fixing bugs, and optimizing code. The app is built using technologies such as Next.js, Tailwind, and React Query.',
+        'Implement requested features for internal dashboard app that utilize React v.15.',
+        'Continuously work on another on-going app by implementing requested features, fixing bugs, and optimizing code. The app is built using technologies such as Next.js, Tailwind, and React Query.',
       ],
     },
     {
@@ -39,9 +39,20 @@ export const data = {
       companyUrl: 'https://dicoding.com',
       location: 'Remote',
       responsibilities: [
-        "Reviewing student's submissions (assignments) in a course according to the given target.",
+        "Reviewing student's submission (assignment) in a course according to the given target.",
         "Provide solution and suggestion to student's submission.",
         'Help to answer the forum discussion.',
+      ],
+    },
+    {
+      title: 'Web Developer',
+      type: 'Full-time',
+      period: 'Aug 2020 – Oct 2020',
+      company: 'BNC Fotocopy',
+      companyUrl: 'https://website-bnc.vercel.app',
+      location: 'Tangerang',
+      responsibilities: [
+        'Building a company profile website using Next.js v.9 and Tailwind v.1.',
       ],
     },
   ],
@@ -62,7 +73,7 @@ export const data = {
       'Git',
       'GitHub',
       'GitLab',
-      'React.js',
+      'React',
       'Next.js',
       'Astro',
       'Redux',
@@ -89,5 +100,5 @@ export const data = {
       urlPreview: 'css-shadow-gen.vercel.app',
       description: 'An app to help generate box-shadow or text-shadow CSS code with customization.',
     },
-  ]
+  ],
 };
