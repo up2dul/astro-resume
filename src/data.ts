@@ -44,19 +44,16 @@ export const data = {
         'Help to answer the forum discussion.',
       ],
     },
-    {
-      title: 'Web Developer',
-      type: 'Full-time',
-      period: 'Aug 2020 – Oct 2020',
-      company: 'BNC Fotocopy',
-      companyUrl: 'https://website-bnc.vercel.app',
-      location: 'Tangerang',
-      responsibilities: [
-        'Building a company profile website using Next.js v.9 and Tailwind v.1.',
-      ],
-    },
   ],
   educations: [
+    {
+      title: 'Telkom University',
+      type: "Bachelor's Degree",
+      degree: 'Informatics',
+      period: 'Sep 2023 – Present',
+      url: 'https://telkomuniversity.ac.id',
+      location: 'Online Learning',
+    },
     {
       title: 'SMK Media Informatika',
       type: 'Vocational High School',
