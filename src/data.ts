@@ -3,18 +3,22 @@ export const data = {
     {
       url: 'https://linkedin.com/in/up2dul',
       display: 'linkedin.com/in/up2dul',
+      label: 'LinkedIn',
     },
     {
-      url: 'https://up2dul.com',
-      display: 'up2dul.com',
+      url: 'https://up2dul.vercel.app',
+      display: 'up2dul.vercel.app',
+      label: 'Personal Website',
     },
     {
       url: 'https://github.com/up2dul',
       display: 'github.com/up2dul',
+      label: 'GitHub',
     },
     {
       url: 'mailto:malik301002@gmail.com',
       display: 'malik301002@gmail.com',
+      label: 'Email',
     },
   ],
   experiences: [
@@ -27,8 +31,9 @@ export const data = {
       location: 'Bandung',
       responsibilities: [
         'Using GitLab to manage code repositories, collaborate with other developers, and maintain organized codebase.',
+        'Using ClickUp to manage projects, tasks, and collaborate with Project Managers.',
         'Implement requested features for internal dashboard app that utilize React v.15.',
-        'Continuously work on another on-going app by implementing requested features, fixing bugs, and optimizing code. The app is built using technologies such as Next.js, Tailwind, and React Query.',
+        'Implement requested features and bug fixing for Data Command Center app project that utilize Next.js, Material UI, React Query, and TypeScript.',
       ],
     },
     {
@@ -68,17 +73,17 @@ export const data = {
     [
       'Figma',
       'Git',
-      'GitHub',
-      'GitLab',
       'React',
       'Next.js',
+      'React Query',
       'Astro',
       'Redux',
       'Zustand',
       'Tailwind',
       'Chakra UI',
-      'Mantine',
+      'Material UI',
       'Headless UI',
+      'Mantine',
       'Radix',
     ],
   ],

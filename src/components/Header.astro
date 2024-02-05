@@ -5,7 +5,7 @@ const htmlContacts = data.contacts
   .map(
     (contact) =>
       `<li>
-        <a href=${contact.url}>${contact.display}</a>
+        <a href=${contact.url} aria-label=${contact.label} title=${contact.label}>${contact.display}</a>
       </li>`
   )
   .join(' • ');
@@ -14,8 +14,8 @@ const htmlContacts = data.contacts
 <!-- version 1 -->
 <header class="text-center">
   <div>
-    <h1 class="text-2xl font-semibold">Abdul Malik</h1>
-    <p>Junior Frontend Developer</p>
+    <h1 aria-label="Full Name" class="text-2xl font-semibold">Abdul Malik</h1>
+    <p aria-label="Job Title">Frontend Developer</p>
   </div>
 
   <ul class="flex flex-wrap justify-center gap-x-3 px-14 font-medium">
